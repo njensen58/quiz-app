@@ -41,5 +41,18 @@ cardRouter.put('/:cardId', (req, res, next) => {
     )
 })
 
+cardRouter.delete('/:cardId', (req, res, next) => {
+    Cards.findOneAndRemove(
+        {_id: req.params.cardId},
+        (err, card) => {
+            if (err) {
+                res.status(500)
+                return next(err)
+            }
+            return res.status(200).send(card)
+        }
+    )
+})
+
 
 module.exports = cardRouter

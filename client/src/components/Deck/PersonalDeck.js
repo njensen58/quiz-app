@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { withRouter } from 'react-router-dom'
 import Popup from '../../components/Popup'
+import './deckStyle.css'
 
 const PersonalDeck = props => {
     const { title, description, _id, likes, deleteDeck, history } = props
@@ -12,7 +13,7 @@ const PersonalDeck = props => {
                 <Popup 
                     question={`Are you sure you want to delete Deck: ${title}?`}
                     toggleClose={() => setConfirmDelete(false)}
-                    deleteDeck={deleteDeck}
+                    method={deleteDeck}
                     id={_id}/>}
             <h3>{title}</h3><span>Likes: {likes}</span>
             <p>{description}</p>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Form from '../shared/Form'
 import DeckForm from './DeckForm'
-import UserDecks from './UserDecks'
+import UserDecks from '../Deck/UserDecks'
 import { withDecks } from '../../context/DeckProvider'
 import './makerStyles.css'
 

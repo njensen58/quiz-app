@@ -1,7 +1,8 @@
 .deckmaker-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    padding-top: 60px;
 }
 
 .deckmaker-container > h1 {
@@ -26,27 +27,21 @@
 .deckmaker-container form {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
+    align-items: center;
 }
 
 .deckmaker-container form input {
     margin: 0 5px;
     border: none;
     padding: 2px;
+    height: 25px;
 }
 
 .deckmaker-container form button {
     padding: 3px;
     border-radius: 3px;
+    background-color: #2229;
+    color: white;
 }
 
-.personal-deck {
-    border-radius: 2px; 
-    width: 150px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin: 5px auto;
-    box-shadow: -1px 1px 4px 0px rgba(100, 100, 100, 1);
-    background-color: lightsteelblue
-}

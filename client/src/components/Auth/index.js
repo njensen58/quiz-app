@@ -1,31 +1,37 @@
-import React, {  Fragment } from 'react'
+import React, { Fragment } from 'react'
 import AuthForm from './AuthForm'
 import Toggle from '../shared/Toggle'
 import Form from '../shared/Form'
+import Header from '../Header'
 import { withUser } from '../../context/UserProvider'
 import './authStyle.css'
 
 const Auth = props => { 
+    const { signup, login, logout, token } = props
     return (
-        <div className="auth-container">
-            <Toggle render={({ isToggled, toggler }) => 
-                <Fragment>
-                    <h1 onClick={toggler}>{isToggled ? "Sign Up" : "Login"}</h1>
-                    { isToggled 
-                        ?    <Form 
-                                inputs={{ username: '', password: '' }}
-                                submit={inputs => props.signup(inputs)}
-                                render={props => <AuthForm {...props} btnText="Sign up"/>}
-                            />
-                        :   <Form 
-                                inputs={{ username: '', password: '' }}
-                                submit={inputs => props.login(inputs)}
-                                render={props => <AuthForm {...props} btnText="Login"/>}
-                            />
-                    }
-                </Fragment>
-            }/>
-        </div>
+        <Fragment>
+            <Header token={token} logout={logout}/>
+            <div className="auth-container">
+                <Toggle render={({ isToggled, toggler }) => 
+                    <div>
+                        <span onClick={toggler}>Click here to {isToggled ? "Login" : "Sign Up"}</span>
+                        <h1>{isToggled ? "Sign Up" : "Login"}</h1>
+                        { isToggled 
+                            ?    <Form 
+                                    inputs={{ username: '', password: '' }}
+                                    submit={inputs => signup(inputs)}
+                                    render={props => <AuthForm {...props} btnText="Sign up"/>}
+                                />
+                            :   <Form 
+                                    inputs={{ username: '', password: '' }}
+                                    submit={inputs => login(inputs)}
+                                    render={props => <AuthForm {...props} btnText="Login"/>}
+                                />
+                        }
+                    </div>
+                }/>
+            </div>
+        </Fragment>
     )
 }
 

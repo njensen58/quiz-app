@@ -2,7 +2,7 @@ import React from 'react'
 import './popupStyle.css'
 
 const Popup = (props) => {
-    const { question, toggleClose, deleteDeck, id } =props
+    const { question, toggleClose, method, id } =props
     return (
         <div className="popup-container">
             <div className="popup-contents">
@@ -11,7 +11,7 @@ const Popup = (props) => {
                 </div>
                 <div>
                     <button onClick={toggleClose}>Cancel</button>
-                    <button onClick={() => deleteDeck(id)}>Delete</button>
+                    <button onClick={() => method(id)}>Delete</button>
                 </div>
             </div>
         </div>

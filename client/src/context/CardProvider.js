@@ -73,7 +73,7 @@ export default class CardProvider extends Component {
     }
 
     deleteCard = cardId => {
-        cardAxios.delete(`/api/card/${cardId}`)
+        cardAxios.delete(`/api/cards/${cardId}`)
             .then(res => {
                 this.setState(p => ({
                     userCards: p.userCards.filter(c => c._id !== cardId)

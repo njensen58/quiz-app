@@ -1,11 +1,20 @@
 .header {
-    height: 50px;
+    transition: height .5s linear 0s;
     width: 100vw;
     background-color: #3339;
     display: flex;
     align-items: center;
     position: fixed;
     z-index: 2;
+    height: 60px;
+}
+
+.header-tall {
+    height: 60px;
+}
+
+.header-small {
+    height: 25px;
 }
 
 .header h1 {

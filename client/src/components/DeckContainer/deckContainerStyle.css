@@ -1,0 +1,12 @@
+.decks-container-public {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 90px;
+    height: 100vh;
+}
+
+.decks-container-private {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}

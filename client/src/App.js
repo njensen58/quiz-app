@@ -14,7 +14,7 @@ class App extends Component {
     componentDidMount(){
         this.props.verify()
     }
-    
+
     render(){
         const { user, token, loading, logout } = this.props
         return (

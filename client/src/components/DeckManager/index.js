@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import UserCard from '../Card/UserCard'
 import Form from '../shared/Form'
-import CardForm from '../DeckMaker/CardForm'
+import CardForm from './CardForm'
 import { withCards } from '../../context/CardProvider'
 import './managerStyle.css'
 

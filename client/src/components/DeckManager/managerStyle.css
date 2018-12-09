@@ -1,3 +1,47 @@
 .manager-container {
-    
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.manager-container h1 {
+    text-align: center;
+    padding: 4px;
+    color: white;
+    background-color: #2229;
+    border-radius: 3px;
+    width: 250px;
+    margin: 5px auto;
+}
+
+.manager-container form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.manager-container form input {
+    margin: 5px;
+    padding: 3px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+}
+
+.manager-container form textarea {
+    margin: 5px;
+    font-size: 14px;
+    height: 50px;
+    padding: 3px;
+    resize: none;
+    border-radius: 2px;
+    border: none;
+}
+
+.manager-container form button {
+    font-size: 12px;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width: 100px;
+    margin: 0 auto;
 }

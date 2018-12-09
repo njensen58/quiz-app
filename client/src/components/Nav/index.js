@@ -13,7 +13,7 @@ const Nav = props => {
                 <button onClick={toggler} className="nav-btn">Nav</button>
                 <div className={isToggled ? "nav nav-open" : "nav nav-close"} onClick={toggler}>
                     <Link to="/all" >Decks</Link>
-                    <Link to="/deckmaker" >Deck Maker</Link>
+                    <Link to="/deckmaker">Deck Maker</Link>
                     <p onClick={logout}>Logout</p>
                 </div>
             </Fragment>

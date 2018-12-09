@@ -11,7 +11,10 @@ class Study extends Component {
     render(){
         return (
             <div className="study-container">
-                { this.props.currentCards.map(card => <Card {...card} key={card._id}/>)}
+                {this.props.currentCards.length 
+                    ? this.props.currentCards.map(card => <Card {...card} key={card._id}/>)
+                    : <div>Oops, it appears this deck doesn't have any cards yet...</div>
+                }
             </div>
         )
     }
