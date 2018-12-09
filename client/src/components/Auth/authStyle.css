@@ -1,0 +1,13 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

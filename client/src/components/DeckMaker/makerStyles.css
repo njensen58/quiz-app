@@ -1,0 +1,52 @@
+.deckmaker-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.deckmaker-container > h1 {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 5px 25px;
+    color: white;
+    background-color: #1117;
+}
+
+.deckmaker-container > h3 {
+    text-align: center;
+    margin: 5px auto;
+    border-bottom: 1px solid black;
+    width: 130px;
+    padding-bottom: 2px;
+    color: white;
+}
+
+.deckmaker-container form {
+    display: flex;
+    justify-content: center;
+}
+
+.deckmaker-container form input {
+    margin: 0 5px;
+    border: none;
+    padding: 2px;
+}
+
+.deckmaker-container form button {
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.personal-deck {
+    border-radius: 2px; 
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px auto;
+    box-shadow: -1px 1px 4px 0px rgba(100, 100, 100, 1);
+    background-color: lightsteelblue
+}

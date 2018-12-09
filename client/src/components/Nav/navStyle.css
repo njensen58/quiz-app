@@ -1,0 +1,79 @@
+.nav {
+    position: absolute;
+    height: 100vh;
+    left: -300px;
+    transition: left .2s linear 0s;
+    width: 250px;
+    background-color: #eff;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    z-index: 3;
+}
+
+.nav-open {
+    left: 0px;
+}
+
+.nav-close {
+    left: -300px;
+}
+
+.goback-btn {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    padding: 3px;
+    z-index: 0;
+    background-color: #00223E;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid #ddd9;
+}
+
+.overlay {
+    width: 100vw;
+    min-height: 1500px;
+    position: absolute;
+    z-index: 2;
+    background-color: #1119;
+    left: 0;
+    transition: left 1ms linear 0s;
+}
+
+.overlay-open {
+    left: 0
+}
+
+.overlay-close {
+    left: -100vw;
+}
+
+.nav-btn {
+    position: absolute;
+    right: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #2229;
+    color: white;
+}
+
+.nav > a,
+.nav > p {
+    font-size: 30px;
+    transition: .3s;
+    padding: 5px;
+    border-radius: 3px;
+    color: darkslategray;
+}
+
+.nav > a:visited {
+    color: darkslategray;
+}
+
+.nav > a:hover,
+.nav > p:hover {
+    background-color: #dee;
+    color: #222;
+}
